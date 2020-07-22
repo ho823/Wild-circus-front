@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar';
-import { Paragraph, Button } from '../Mainstyle';
+import { Paragraph, Button, Title } from '../Mainstyle';
 import swinging from '../image/swinging.png';
 
 const HomeContainer = styled.div`
@@ -24,7 +24,7 @@ const RightContent = styled.div`
   padding-top: 3rem;
 `;
 
-const Title = styled.h1`
+const TitleH1 = styled(Title)`
   width: 60%;
   color: #F94189;
   font-size: 2rem;
@@ -51,7 +51,7 @@ export default function Home() {
         </LeftContent>
 
         <RightContent>
-          <Title>Tristique ornare vitae risus lectus nisl eu</Title>
+          <TitleH1>Tristique ornare vitae risus lectus nisl eu</TitleH1>
           <HomeContent>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Tristique ornare vitae risus lectus nisl eu. Ligula orci
             tristique ultrices auctor dictum sit tincidunt proin amet.

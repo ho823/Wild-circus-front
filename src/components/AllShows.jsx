@@ -2,12 +2,20 @@ import React from 'react';
 import Navbar from './Navbar';
 import Show from './Show';
 import styled from 'styled-components';
+import ballet from '../image/ballet.png';
+
 
 const ContainerAllShows = styled.div`
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 3rem;
+  background-color: #FDFF9B;
+  background-image: url(${ballet});
+  background-size: 67%;
+  background-repeat: no-repeat;
+  background-position: right;
 `;
 
 export default function AllShows() {

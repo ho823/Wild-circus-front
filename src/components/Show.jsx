@@ -5,11 +5,13 @@ import { Paragraph, Button, Titleh3 } from '../Mainstyle';
 
 
 const ShowContainer = styled.div`
-  margin-right: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   border: solid #FF5678;
   padding: 1rem;
   text-align: left;
   border-radius: 10px;
+  background-color: white;
 `;
 
 const Titleh2 = styled.h2`

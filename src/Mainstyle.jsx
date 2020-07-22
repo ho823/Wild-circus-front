@@ -17,3 +17,9 @@ export const Titleh3 = styled.h3`
   font-style: italic;
   font-size: 0.8rem;
 `;
+
+export const Title = styled.h1`
+  width: 60%;
+  color: #F94189;
+  font-size: 2rem;
+`;
