@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Navbar from './Navbar';
 import { Paragraph, Button } from '../Mainstyle';
 import swinging from '../image/swinging.png';
 
@@ -40,22 +41,26 @@ const HomeButton = styled(Button)`
 
 export default function Home() {
   return (
-    <HomeContainer>
-
-      <LeftContent>
-        <img src={swinging} alt="illustration"/>
-      </LeftContent>
-
-      <RightContent>
-        <Title>Tristique ornare vitae risus lectus nisl eu</Title>
-        <HomeContent>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Tristique ornare vitae risus lectus nisl eu. Ligula orci
-          tristique ultrices auctor dictum sit tincidunt proin amet.
-          Adipiscing id arcu at non nulla lacus. Pellentesque donec sit
-          habitant turpis arcu sagittis in lobortis.</HomeContent>
-          <HomeButton>Réserver</HomeButton>
-      </RightContent>
+    <>
+      <Navbar />
       
-    </HomeContainer>
+      <HomeContainer>
+
+        <LeftContent>
+          <img src={swinging} alt="illustration"/>
+        </LeftContent>
+
+        <RightContent>
+          <Title>Tristique ornare vitae risus lectus nisl eu</Title>
+          <HomeContent>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Tristique ornare vitae risus lectus nisl eu. Ligula orci
+            tristique ultrices auctor dictum sit tincidunt proin amet.
+            Adipiscing id arcu at non nulla lacus. Pellentesque donec sit
+            habitant turpis arcu sagittis in lobortis.</HomeContent>
+            <HomeButton>Réserver</HomeButton>
+        </RightContent>
+        
+      </HomeContainer>
+    </>
   );
 }

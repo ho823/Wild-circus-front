@@ -1,16 +1,20 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import{ BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from './components/Home';
 import AllShows from './components/AllShows';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
-      <AllShows />
-    </div>
+    <Router>
+      <div>
+        <Link to="/" />
+        </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/spectacle" component={AllShows} />
+      </Switch>
+    </Router>
   );
 }
 

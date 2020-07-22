@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 const Nav = styled.div`
@@ -21,7 +22,7 @@ const Items = styled.li`
   }
 `;
 
-const Link = styled.a`
+const LinkNav = styled(Link)`
   text-decoration: none;
   color: black;
 
@@ -38,11 +39,11 @@ export default function Navbar() {
   return (
     <Nav>
       <ListItem>
-        <Items><Link href="#">Accueil</Link></Items>
-        <Items><Link href="#">Spectacles</Link></Items>
-        <Items><Link href="#">Près de chez vous</Link></Items>
-        <Items><Link href="#">À propos</Link></Items>
-        <Items><Link href="#">Contact</Link></Items>
+        <Items><LinkNav to="/">Accueil</LinkNav></Items>
+        <Items><LinkNav to="/spectacle">Spectacles</LinkNav></Items>
+        <Items><LinkNav to="/aproximite">Près de chez vous</LinkNav></Items>
+        <Items><LinkNav to="/apropos">À propos</LinkNav></Items>
+        <Items><LinkNav to="/contact">Contact</LinkNav></Items>
       </ListItem>
       
     </Nav>
