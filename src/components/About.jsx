@@ -11,7 +11,7 @@ export default function About() {
   return (
 
     <>
-    
+  
       <Navbar />
       <Content>
         <AllPortraits />

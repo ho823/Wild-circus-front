@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar';
-import { Paragraph, Button, Title, Input } from '../Mainstyle';
+import { Paragraph, Title, Input } from '../Mainstyle';
 import dupoplants from '../image/duoplants.png';
 
+import Modal from './Modal';
 
 const ContactContainer = styled.div`
   height: 100vh;
@@ -35,11 +36,6 @@ const TitleH1 = styled(Title)`
 const ContactContent = styled(Paragraph)`
   width: 70%;
 
-`;
-
-const ContactButton = styled(Button)`
-  box-shadow: 1px 5px 10px -4px rgba(0,0,0,0.75);
-  margin-top: 2rem;
 `;
 
 const ContactForm = styled.form`
@@ -89,7 +85,8 @@ export default function Contact() {
               />
             </ContactForm>
 
-            <ContactButton type="submit">Envoyer</ContactButton>
+            <Modal />
+
         </LeftContent>
 
         <RightContent>
