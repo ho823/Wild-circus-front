@@ -10,6 +10,7 @@ export const Button = styled.button`
   background-color: #FDD86D;
   padding: 0.8rem 1.2rem 0.8rem 1.2rem;
   border: none;
+  cursor: pointer;
 `;
 
 export const Titleh3 = styled.h3`
@@ -19,7 +20,12 @@ export const Titleh3 = styled.h3`
 `;
 
 export const Title = styled.h1`
-  width: 60%;
   color: #F94189;
   font-size: 2rem;
+`;
+
+export const Input = styled.input`
+margin-top: 2rem;
+border: none;
+border-bottom: 0.1rem solid #373737;
 `;
