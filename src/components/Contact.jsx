@@ -66,6 +66,7 @@ const ContactButton = styled(ButtonStyled)`
 
 
 export default function Contact() {
+  
   const [user, setUser] = useState([]);
   const [name, setName] = useState('');
   const [mail, setMail] = useState('');
@@ -74,7 +75,7 @@ export default function Contact() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    if ({postName}==="" && {postMail}==="" && {postMessage}===""){
+    if (name==="" && mail==="" && message===""){
       setShow(false);
     }else{
       setShow(true);

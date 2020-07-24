@@ -5,6 +5,8 @@ import AllShows from './components/AllShows';
 import About from './components/About';
 import Maps from './components/Maps';
 import Contact from './components/Contact';
+import Backoffice from './components/Backoffice';
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
         <Route path="/aproximite" component={Maps} />
         <Route path="/apropos" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/bdd" component={Backoffice} />
       </Switch>
     </Router>
   );
