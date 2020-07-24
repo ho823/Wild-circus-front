@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar';
-import { Paragraph, Button, Title } from '../Mainstyle';
+import { Paragraph, ButtonStyled, Title } from '../Mainstyle';
 import swinging from '../image/swinging.png';
 
 const HomeContainer = styled.div`
@@ -35,7 +35,7 @@ const HomeContent = styled(Paragraph)`
 
 `;
 
-const HomeButton = styled(Button)`
+const HomeButton = styled(ButtonStyled)`
   box-shadow: 1px 5px 10px -4px rgba(0,0,0,0.75);
 `;
 

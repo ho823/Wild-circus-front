@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import styled from 'styled-components';
-import { Title, Button, Input } from '../Mainstyle';
+import { Title, ButtonStyled, Input } from '../Mainstyle';
 import laying from '../image/laying.png';
 import map from '../image/map.png';
 
@@ -10,7 +10,7 @@ const MapsTitle = styled(Title)`
   width: 20%;
 `;
 
-const SearchButton = styled(Button)`
+const SearchButton = styled(ButtonStyled)`
   margin-top: 1rem;
 `;
 

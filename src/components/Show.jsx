@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Paragraph, Button, Titleh3 } from '../Mainstyle';
+import { Paragraph, Titleh3 } from '../Mainstyle';
+
+import Modal from './Modal';
+
 
 
 const ShowContainer = styled.div`
@@ -30,9 +33,6 @@ const ShowContent = styled(Paragraph)`
 
 `;
 
-const ShowButton = styled(Button)`
-
-`;
 
 
 export default function Show({ title, subtitle, content }) {
@@ -41,7 +41,7 @@ export default function Show({ title, subtitle, content }) {
       <Titleh2>{title}</Titleh2>
       <h3Show>{subtitle}</h3Show>
       <ShowContent>{content}</ShowContent>
-        <ShowButton>Réserver</ShowButton>
+      <Modal />
     </ShowContainer>
   );
 }

@@ -3,19 +3,18 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import styled from 'styled-components';
-import { Button, Input, Title } from '../Mainstyle';
+import { ButtonStyled, Input, Title } from '../Mainstyle';
 
 import blueplant from '../image/blueplant.png';
 
 const ModalInput = styled(Input)`
 `;
 
-const ModalButton = styled(Button)`
-  box-shadow: 1px 5px 10px -4px rgba(0,0,0,0.75);
+const ModalButton = styled(ButtonStyled)`
   margin-top: 2rem;
 `;
 
-const InternButton = styled(Button)`
+const InternButton = styled(ButtonStyled)`
   margin-top: 2rem;
   margin-right: 1rem;
 `;
@@ -26,8 +25,6 @@ const ImageModal = styled.img`
   height: 6rem;
   margin-left: 3rem;
 `;
-
-
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;

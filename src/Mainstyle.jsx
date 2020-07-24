@@ -6,7 +6,7 @@ export const Paragraph = styled.p`
   font-size: 1rem;
 `;
 
-export const Button = styled.button`
+export const ButtonStyled = styled.button`
   background-color: #FDD86D;
   padding: 0.8rem 1.2rem 0.8rem 1.2rem;
   border: none;
