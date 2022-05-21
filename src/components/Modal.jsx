@@ -8,6 +8,7 @@ import { ButtonStyled, Input, Title } from '../Mainstyle';
 import blueplant from '../image/blueplant.png';
 
 const ModalInput = styled(Input)`
+margin-right: 2rem;
 `;
 
 const ModalButton = styled(ButtonStyled)`
@@ -93,7 +94,7 @@ export default function SimpleModal() {
     <div>
 
       <ModalButton type="button" onClick={handleOpen}>
-        Envoyer
+        Réserver
       </ModalButton>
       <Modal
         open={open}

@@ -17,6 +17,10 @@ const LeftContent = styled.div`
   align-items: center;
 `;
 
+const ImgLeft = styled.img`
+  width: 100%;
+`;
+
 const RightContent = styled.div`
   width: 50%;
   text-align: left;
@@ -37,6 +41,7 @@ const HomeContent = styled(Paragraph)`
 
 const HomeButton = styled(ButtonStyled)`
   box-shadow: 1px 5px 10px -4px rgba(0,0,0,0.75);
+  margin-top: 2rem;
 `;
 
 export default function Home() {
@@ -47,7 +52,7 @@ export default function Home() {
       <HomeContainer>
 
         <LeftContent>
-          <img src={swinging} alt="illustration"/>
+          <ImgLeft src={swinging} alt="illustration"/>
         </LeftContent>
 
         <RightContent>

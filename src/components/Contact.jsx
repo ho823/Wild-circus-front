@@ -95,8 +95,10 @@ export default function Contact() {
       setName('');
       setMail('');
       setMessage('');
+      setShow(true);
     } catch (err) {
       setError(err);
+      setShow(false);
     }
   };
 
